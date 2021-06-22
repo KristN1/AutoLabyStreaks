@@ -3,7 +3,6 @@ import os
 import datetime
 import subprocess
 import minecraft_launcher_lib
-import subprocess
 
 now = datetime.datetime.now()
 print(now.hour)

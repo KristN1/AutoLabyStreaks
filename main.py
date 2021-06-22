@@ -7,7 +7,7 @@ import minecraft_launcher_lib
 now = datetime.datetime.now()
 print(now.hour)
 
-if now.hour > 1 and now.hour < 6:
+if now.hour > 1 and now.hour < 6: # Change this if you want to change the time when your PC is gonna turn off automatically 
 
     with open("creds.txt", "r") as f:
 
@@ -24,7 +24,6 @@ if now.hour > 1 and now.hour < 6:
         "username": login_data["selectedProfile"]["name"],
         "uuid": login_data["selectedProfile"]["id"],
         "token": login_data["accessToken"],
-        "server": "play.cubecraft.net",
     }
 
     minecraft_command = minecraft_launcher_lib.command.get_minecraft_command("LabyMod-3-1.16.5",minecraft_directory,options)
